@@ -1,0 +1,186 @@
+@font-face{
+    font-family: 'Lemon';
+    src: url(Lemon-Regular.ttf);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    background-image: url(imagenes/Space-Background-Images.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 90px 20px 0;;
+}
+
+.header {
+    background-color: #0769e9;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+}
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background-color: rgb(34, 176, 219);
+    transition: 0.5s;
+}
+
+.nav-toggle{
+    font-size: 30px;
+    color:aliceblue;
+    background: none;
+    border: none;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+#site{
+    font-family: "Lemon";
+    font-size: xx-large;
+    text-align: center;
+    color: aliceblue;
+}
+
+#historia .historia-parrafo {
+    color: aliceblue;
+    font-size: x-large;
+    text-align:justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+
+.linea-separadora{
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 1 40px;
+    color:#0769e9;
+
+}
+.quotes{
+    font-size: x-large;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(142, 196, 229);
+}
+
+.container{
+    text-align: center;
+}
+.container img {
+    max-width: 100%; /* Ensures the image won't exceed its container's width */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+.external-link{
+    font-size: x-large;
+    text-align:right;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+
+@media (max-width: 780px){  
+    body{
+        padding-top: 70px;
+    }   
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(7, 3, 34);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item{
+        line-height: 70px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background: none;
+        color: red;
+    }
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+    #historia .historia-parrafo {
+        font-size: small;
+        padding: 10px 0;
+    }
+}

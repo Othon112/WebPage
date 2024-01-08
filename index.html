@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6ac15dec06.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav-link">Rubik</a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-cubes"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="#historia" class="nav-menu-link nav-link">Historia</a></li>
+                <li class="nav-menu-item"><a href="#algoritmos" class="nav-menu-link nav-link">Algoritmos Básicos</a></li>
+                <li class="nav-menu-item"><a href="#timer" class="nav-menu-link nav-link">Timer</a></li>
+                <li class="nav-menu-item"><a href="#nosotros" class="nav-menu-link nav-link">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="historia" class="content-section background">
+            <div id = "site">
+                <h2>Historia</h2>
+                <p class="historia-parrafo">        
+                    Nacido el 13 de julio de 1944, Erno Rubik, el creador del "cubo mágico", fue hijo de un ingeniero aeronáutico. Erno admiraba enormemente a su progenitor, del que dijo haber aprendido.
+                </p>
+                <hr class="linea-separadora">
+                <i>
+                    <p class = "quotes">
+                        "Mucho sobre el trabajo en el sentido de que es un proceso de creación que tiene un objetivo y un resultado positivo también. Tanto en sentido figurado como literal, mi padre era una persona capaz de mover una montaña".
+                    </p>
+                </i>
+                <hr class="linea-separadora">
+                <p class="historia-parrafo">
+                    Para construir su cubo, Rubik unió unos bloques de madera a unas gomas elásticas para que aquellos pudieran moverse sin que la estructura entera acabara desmoronándose. Finalmente las gomas se rompieron y Rubik se dio cuenta de las combinaciones que había podido realizar. El paso siguiente fue colocar papel adhesivo de distintos colores en cada uno de los seis lados del cubo y lo volvió a girar. Rubik estaba encantado con la gran variedad de combinaciones de colores que se había llegado a producir, pero también vio que nunca se podía volver al diseño original.
+                </p>
+                <div class="container">
+                    <img src="imagenes/Erno-Rubik-1.jpg">
+                </div>
+                <p class="historia-parrafo">
+                    Tras solicitar una patente para su invento, Rubik llevó su idea a una pequeña cooperativa de Budapest dedicada a la fabricación de juguetes. De este modo, el cubo se empezó a fabricar a pequeña escala. Fue afinales de 1977 cuando Rubik propuso la fabricación de su cubo a Konsumex, la empresa comercial estatal de Hungría, para intentar vender su proyecto en Occidente.
+                </p>
+                <p class="external-link">Para más información <a href="https://historia.nationalgeographic.com.es/a/historia-cubo-rubik-artefacto-prodigioso_17584" >Click Aquí</a></p>
+
+            </div>
+        </section>
+        
+
+        <section id="algoritmos" class="content-section">
+            <h2>Algoritmos Básicos</h2>
+            <p>Contenido de la sección de Algoritmos Básicos.</p>
+        </section>
+
+        <section id="timer" class="content-section">
+            <h2>Timer</h2>
+            <p>Contenido de la sección de Timer.</p>
+        </section>
+
+        <section id="nosotros" class="content-section">
+            <h2>Sobre Nosotros</h2>
+            <p>Contenido de la sección de Sobre Nosotros.</p>
+        </section>
+    </main>
+</body>
+</html>
